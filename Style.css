@@ -1,0 +1,78 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+/* Header */
+header{
+    background:#1a1a1a;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff4444;
+}
+
+/* Search Box */
+.search{
+    width:300px;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+}
+
+/* Manga Cards */
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:#222;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    display:block;
+}
+
+.card h3{
+    padding:10px;
+    text-align:center;
+}
+
+/* Button */
+button{
+    background:#ff4444;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff2222;
+}
